@@ -1,0 +1,43 @@
+:root {
+  --color-bg-start: #eef2ff;
+  --color-bg-end: #f9fafb;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-border-focus: #6366f1;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-primary: #6366f1;
+  --color-primary-soft: #eef2ff;
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fecaca;
+  --color-danger-text: #b91c1c;
+  --color-success: #059669;
+  --shadow-card: 0 10px 40px -12px rgba(15, 23, 42, 0.15), 0 4px 12px -4px rgba(15, 23, 42, 0.08);
+  --radius-lg: 14px;
+  --radius-md: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background: radial-gradient(1200px 600px at 15% -10%, #e0e7ff 0%, transparent 60%),
+              radial-gradient(900px 500px at 95% 110%, #fce7f3 0%, transparent 55%),
+              linear-gradient(180deg, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+  background-attachment: fixed;
+}
